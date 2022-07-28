@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+body {
+  background-color:#DDE1D4;
+  padding:15px;
+  font-family: 'Libre Baskerville', serif;
+  width: 100%;
+  height: 100vh;
+  margin:0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  width: 800px;
+  height: 400px;
+}
+
+
+.outline-container div:nth-child(1){
+  background: #c3dcdf;
+  color: red;
+  font-size: 40px;
+  font-weight: 500;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline-container div:nth-child(2){
+  background: #008a67;
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline-container div:nth-child(3){
+  background: red;
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.inline-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr 1fr;
+}
+
+.inline-container div:nth-child(1){
+  background: #ff99df;
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inline-container div:nth-child(2){
+  background: #6b55dd;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inline-container div:nth-child(3){
+  background: #ffbe33;
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inline-container div:nth-child(4){
+  background: #f95d8c;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
