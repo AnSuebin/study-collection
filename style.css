@@ -1,0 +1,186 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 400px 100px;
+  grid-template-areas:
+  "address main"
+  "address footer";
+}
+
+h5 {
+ font-size: 10px; 
+}
+
+address {
+  grid-area: address;
+  display:grid;
+  grid-template-rows: 50px 1fr 1fr; 
+  grid-template-areas: 
+  "h5"
+  "office-main-information"
+  "officeInformation";
+  border: solid 2px black;
+}
+
+address h5{
+  grid-area: h5;
+  padding: 10px;
+}
+
+address .officeMainInformation{
+  grid-area: office-main-information;
+}
+
+address .officeMainInformation h1{
+  font-size: 20px;
+  padding: 15px 10px;
+}
+
+address .officeMainInformation ul {
+  border-bottom: solid 1px black;
+  font-size: 10px;
+}
+
+address .officeMainInformation ul li {
+  padding: 7px 15px;
+  border-top: solid 1px black;
+}
+
+address .officeMainInformation ul li:nth-child(1) {
+  background-color: #ededed;
+}
+
+address .officeInformation {
+  grid-area: officeInformation;
+   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+address .officeInformation ul {
+  grid-area: officeInformation;
+  font-size: 12px;
+  padding: 10px;
+}
+
+address .officeInformation ul:nth-child(2) li:nth-child(1), address .officeInformation ul:nth-child(3) li:nth-child(1){
+  font-weight: 600;
+} 
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 50px 50px 100px;
+  grid-template-areas: 
+  "main-detail main-img sub-img1 sub-img1 sub-img1"
+  "main-detail main-img sub-img2 sub-img2 sub-img3"
+  "main-detail main-img sub-img2 sub-img2 sub-img4"
+  "main-detail main-img sub-img5 sub-img6 sub-img6";
+}
+
+main .main-detail{
+  grid-area: main-detail;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  padding: 10px;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+}
+
+main .main-detail h4 {
+  font-size: 25px;
+}
+
+main .main-detail p {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+main img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  border: solid 2px black;
+}
+
+main .main-img{
+  grid-area: main-img;
+}
+
+main .sub-img1{
+  grid-area: sub-img1;
+}
+
+main .sub-img2{
+  grid-area: sub-img2;
+}
+
+main .sub-img3{
+  grid-area: sub-img3;
+}
+main .sub-img4{
+  grid-area: sub-img4;
+}
+main .sub-img5{
+  grid-area: sub-img5;
+}
+main .sub-img6{
+  grid-area: sub-img6;
+}
+
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+footer div:nth-child(1) {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: solid 2px black;
+}
+
+footer div:nth-child(1) p {
+  font-size: 20px;
+}
+
+footer .footer-img-container {
+  display:grid;
+  grid-template-columns: 1fr 1fr 4fr;
+  grid-template-rows: 50px 50px;
+  grid-template-areas:
+  "footerimg1 footerimg2 footerimg3"
+  "footerimg1 footerimg4 footerimg3";
+}
+
+footer .footer-img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  border: solid 2px black;
+}
+
+footer .footer-img-container .footerimg1{
+  grid-area: footerimg1;
+}
+
+footer .footer-img-container .footerimg2{
+  grid-area: footerimg2;
+}
+
+footer .footer-img-container .footerimg3{
+  grid-area: footerimg3;
+}
+
+
+footer .footer-img-container .footerimg4{
+  grid-area: footerimg4;
+}
