@@ -1,0 +1,156 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.left-img {
+  width: 500px;
+  height: 600px;
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1577056922428-a511301a562d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80");
+  
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.right-img {
+  width: 500px;
+  height: 600px;
+  
+  background-image: url("https://images.unsplash.com/photo-1567880905822-56f8e06fe630?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20px 500px 500px 20px;
+  grid-template-rows: 20px 600px 20px;
+  grid-template-areas:
+    "topline topline topline topline"
+    "leftline leftimg rightimg rightline"
+    "bottomline bottomline bottomline bottomline"
+    ;
+  text-transform: uppercase;
+}
+
+.top-line {
+  grid-area: topline;
+  color: tomato;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: italic;
+  border: 2px solid tomato; 
+  padding-top: 1px;
+}
+
+.left-line {
+  grid-area: leftline;
+  display:flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.left-line div{
+  width:10px;
+  word-wrap: break-word;
+  text-align:center;
+  padding: 3px;
+  font-size: 10px;
+}
+
+.left-line div:nth-child(1){
+  background-color:tomato;
+  color:white;
+  padding-top: 80px;
+  border: 2px solid tomato; 
+  height: 302px;
+}
+
+.left-line div:nth-child(2) {
+  color: tomato;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  border: 2px solid tomato; 
+  height: 171px;
+}
+
+.left-line div:nth-child(3) {
+  color: tomato;
+  border: 2px solid tomato; 
+}
+
+.right-line {
+   grid-area: rightline;
+    background-color: #08c408;
+    color: white;
+   border: 2px solid tomato;
+}
+
+.right-line div{
+  width:10px;
+  word-wrap: break-word;
+  text-align:center;
+  padding: 3px;
+  font-size: 10px;
+  font-weight: 700;
+}
+.right-line div:nth-child(1) {
+  height: 200px;
+  margin-top: 100px;
+}
+
+.right-line div:nth-child(2) {
+  border-top: 2px solid tomato;
+  height: 300px;
+  padding-top: 80px;
+}
+
+.left-img {
+  grid-area: leftimg;
+}
+
+.right-img {
+  grid-area : rightimg;
+}
+
+.bottom-line {
+  grid-area: bottomline;
+  color: tomato;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: italic;
+  border: 2px solid tomato; 
+  padding-top: 1px;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+}
+.title h3{
+  font-size:30px;
+}
+
+.title h1{
+  font-size:100px;
+  text-align: center;
+}
